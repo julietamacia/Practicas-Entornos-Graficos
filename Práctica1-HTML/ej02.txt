@@ -1,0 +1,164 @@
+Analizar los siguientes segmentos de código indicando en qué sección del documento HTML se colocan, cuál es el efecto que producen y señalar cada uno de los elementos, etiquetas, y atributos (nombre y valor), aclarando si es obligatorio.
+
+2.a)
+<!-- Código controlado el día 12/08/2009 -->
+
+Ubicación: El comentario HTML puede colocarse en cualquier sección del documento HTML, dentro de <head> o <body>
+Efecto: el navegador no muestra el contenido del comentario en la página 
+ELemento: no posee un elemento como tal 
+Etiqueta: <!-- ... -->, es la sintaxis del comentario en HTML 
+Atributos: no tiene
+
+2.b)
+<div id="bloque1">Contenido del bloque1</div>
+
+Ubicacion: normalmente se coloca dentro del body, ya que tiene contenido que será mostrado en la página 
+Efecto: crea un bloque o contenedor genérico (no le da un formato visual específico) que agrupa el contenido "Contenido del bloque1"
+Elemento: <div id="bloque1">Contenido del bloque1</div>
+Etiqueta: <div> y de cierre </div>
+Atributos: 
+- nombre: id
+- valor: bloque1
+- obligatorio: no, el div puede existir sin el id, que lo identifica de manera única, para luego poder referenciarlo para aplicar estilos 
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+
+Ubicación: se coloca dentro del <body>, ya que representa una imagen que forma parte del contenido de la página 
+Efecto: inserta una imagen en el documento. En este caso, como src="", está vacio, no se especifica ninguna imágen para cargar, por lo que probablemente no muestre ninguna
+Elemento: <img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32" longdesc="detalles.htm" />
+Etiqueta: <img>, no tiene etiqueta de cierre, el cierre lo determina "/>"
+Atributos:
+- nombre: src
+- valor: vacío
+- obligatorio: si, ya que indica la ruta de la imágen que se quiere mostrar
+
+- nombre: alt 
+- valor: "lugar imagen"
+- obligatorio: si, ya que proporciona un texto alternativo a la imagen, en caso de que esta no pueda mostrarse y por tecnologías de asistencia
+
+- nombre: id
+- valor: "im1"
+- obligatorio: no 
+
+- nombre: name
+- valor: "im1"
+- obligatorio: no
+
+- nombre: width 
+- valor: "32"
+- obligatorio: no, define el ancho de la imagen, en este caso 32 pixeles
+
+- nombre: height
+- valor: "32"
+- obligatorio: no, define la altura de la imágen, en este caso 32 pixeles
+
+- nombre: longdesc 
+- valor: "detalles.htm"
+- obligatorio: no, indica la URL del documento que contiene una descripción más detallada de la imágen, especialmente útil para accesibilidad
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+
+Ubicación: se coloca dentro del <head>, porque proporciona metadatos sobre el documento
+Efecto: en el primer caso indica que el documento tiene como palabras clave "casa, compra, venta, alquiler" y que esas palabras están en español. 
+En el segundo caso, indica una fecha de expiración para el documento 
+Elemento: 
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+Etiqueta: <meta ... />
+Atributos: 
+Primera línea: 
+- nombre: name
+- valor: "keywords"
+- obligatorio: si, indica el tipo de metadato 
+
+- nombre: lang
+- valor: "es"
+- obligatorio: no, indica que el contenido está en español 
+
+- nombre: content
+- valor: "casa, compra, venta, alquiler"
+- obligatorio: si, contiene el valor del metadato
+
+Segunda línea:
+- nombre: http-equiv
+- valor: "expires"
+- obligatorio: si, indica que el metadato corresponde a una directiva HTTP expires
+
+- nombre: content
+- valor: "16-Sep-2019 7:49 PM"
+- obligatorio: si, contiene la fecha y hora de expiración
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+
+Ubicación: se coloca dentro del <body>
+Efecto: crea un hipervínculo con el texto "Resumen HTML". Al hacer clic, el navegador intenta acceder al recurso indicado en href
+Elemento: <a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8" rel="help">Resumen HTML </a>
+Etiqueta: <a href="...">...</a>
+Atributos: 
+- nombre: href 
+- valor: "http://www.e-style.com.ar/resumen.html"
+- obligatorio: si
+
+- nombre: type
+- valor: "text/html"
+- obligatorio: no, indica el tipo del recurso enlazado
+
+- nombre: hreflang
+- valor: "es"
+- obligatorio: no, indica que el recurso enlazado está en español
+
+- nombre: charset
+- valor: "utf-8"
+- obligatorio: no, indica la codificación en caracteres del recurso enlazado
+
+- nombre: rel 
+- valor: "help"
+- obligatorio: no, indica la relación entre el documento actual y el recurso enlazado 
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+
+Ubicación: se coloca dentro del <body> 
+Efecto: crea una tabla de 3 columnas y 3 filas de datos, con un título: "Título"; encabezados de columna: A, B y C; encabezados de fila: 1° y 2° y por último celdas vacías en el resto de la tabla
+Elemento: toda la tabla, <table...>... </table>
+Etiqueta: <table...> y </table>
+Atributos:
+- nombre: width 
+- valor: 200
+- obligatorio: no
+
+- nombre: summary
+- valor: "Datos correspondientes al ejercicio vencido"
+- obligatorio: no
+
+- nombre: align
+- valor: top
+- obligatorio: no 
+
+- nombre: scope
+- valor: col o row 
+- obligatorio: opcional, pero resulta importante para la accesibilidad
