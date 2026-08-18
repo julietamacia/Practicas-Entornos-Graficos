@@ -1,0 +1,313 @@
+<html>
+    <head>
+        <title>Ejercicio 03</title>
+    </head>
+    <body>
+        <h2>3.a)</h2>
+        <a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+        <div>Esta opción te lleva a Google en la misma pestaña</div>
+        <br><br>
+
+        <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+        <div>Esta opción te lleva a Google abriendo otra pestaña</div>
+        <br><br>
+        
+        <a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help"></a>
+        <div>En este caso no se visualiza nada, porque falta el contenido</div>
+        <br><br>
+
+        <a href="#">Click aquí para ir a Google</a>
+        <div>Este enlace realmente no lleva a Google, sino al inicio de la página actual</div>
+        <br><br>
+
+        <a href="#arriba">Click aquí para volver arriba</a>
+        <a name="arriba" id="arriba"></a>
+        <div>"#" indica que se busca un fragmento/identificador dentro del mismo documento, arriba es el nombre del destino, mientras que id="arriba" identifica el lugar al que queremos ir</div>
+
+        <h2>3.b)</h2>
+        <p>
+            <img src="im1.jpg" alt="imagen1" />
+            <a href="http://www.google.com.ar">Click aquí</a>
+        </p>
+        <div>La imagen se mostraria, sin embargo no es clickeable, mientras que el enlace lleva a google en la misma pestaña</div>
+        <br><br>
+
+        <p>
+            <a href="http://www.google.com.ar">
+                <img src="im1.jpg" alt="imagen1" />
+            </a> Click aquí
+        </p>
+        <div>En este caso la imágen está dentro del enlace, por lo tanto, es clickeable y te lleva a Google en la misma pestaña. Sin embargo, "Click aquí" queda como texto, pues está fuera del enlace</div>
+        <br><br>
+
+        <p>
+            <a href="http://www.google.com.ar">
+                <img src="im1.jpg" alt="imagen1" />Click aquí
+            </a>
+        </p>
+        <div>En este caso, al estar todo dentro del enlace, ambos llevan a Google, pero forman parte de un solo enlace junto</div>
+        <br><br>
+
+        <p>
+            <a href="http://www.google.com.ar">
+                <img src="im1.jpg" alt="imagen1" />
+            </a> 
+            <a href="http://www.google.com.ar">Click aquí</a>
+        </p>
+        <div>Aquí forman parte de enlaces separados, por lo que clickeando uno o el otro ambos llevan a Google</div>
+
+        <h2>3-c)</h2>
+        <ul>
+        <li>xxx</li>
+        <li>yyy</li>
+        <li>zzz</li>
+        </ul>
+        <div>Crea una lista desordenada de 3 elementos (list items)</div>
+        <br><br>
+
+        <ol>
+        <li>xxx</li>
+        <li>yyy</li>
+        <li>zzz</li>
+        </ol>
+        <div>Crea una lista ordenada de 3 elementos</div>
+        <br><br>
+
+        <ol>
+        <li>xxx</li>
+        </ol>
+        <ol>
+        <li value="2">yyy</li>
+        </ol>
+        <ol>
+        <li value="3">zzz</li>
+        </ol>
+        <div>Crea listas ordenadas separadas por cada elemento; con el atributo value="..." se le da el valor que debe tener el item</div>
+        <br><br>
+
+        <blockquote>
+        <p>1. xxx<br />
+        2. yyy<br />
+        3. zzz</p>
+        </blockquote>
+        <div>Se crea la visualizacion de una lista ordenada, pero no lo es; blockquote, indica que el contenido es una cita o bloque de texto citado, el navegador suele mostrarlo con una sangría; p, crea un párrafo y br el salto de línea dentro de este. 
+        </div>
+
+        <h2>3-d)</h2>
+        <table border="1" width="300">
+        <tr>
+        <th>Columna 1</th>
+        <th>Columna 2</th>
+        </tr>
+        <tr>
+        <td>Celda 1</td>
+        <td>Celda 2</td>
+        </tr>
+        <tr>
+        <td>Celda 3</td>
+        <td>Celda 4</td>
+        </tr>
+        </table>
+        <div>Crea una tabla de 2 columnas y 3 filas, en la que se define con los atributos border y width, el borde de 1 pixel y el ancho de 300px. Ademas, con tr (table row) se crea la fila; con th (table header), se crea una celda de encabezado y td (table data), crea una celda de datos </div>
+        <br><br>
+
+        <table border="1" width="300">
+            <tr>
+                <td><div align="center"><strong>Columna1</strong></div></td>
+                <td><div align="center"><strong>Columna 2</strong></div></td>
+            </tr>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+            </tr>
+            <tr>
+                <td>Celda 3</td>
+                <td>Celda 4</td>
+            </tr>
+        </table>
+        <div>Similar a la anterior pero no se usa th para los encabezados, sino un div, dentro de td. Creando la misma visualización</div>
+        
+        <h2>3-e)</h2>
+        <table width="200">
+            <caption>
+                Título
+            </caption>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+        </table>
+        <div>Se crea una tabla, mediante caption, se le agrega un título y dentro de cada fila de la misma se agrega una celda de datos, que está vacía y se le define mediante el atributo bgcolor el color gris claro a cada una</div>  
+        <br><br>
+        
+        <table width="200">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+        </table> 
+        <div>Se crea una tabla igual a la anterior, salvo que para el título, en este caso, se coloca dentro de la tabla en una celda de datos que ocupa varias columnas (definido con el atributo colspan) y dentro con un div  alineado en el centro, el texto "Título"</div>
+
+        <h2>3-f)</h2>
+        <table width="200">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td rowspan="2" bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td> 
+            </tr>
+        </table>
+        <div>También se crea una tabla similar a las anteriores, agregando el título en una celda y utilizando un colspan y div. En este caso, hay una celda que ocupa dos filas, definido con el atributo rowspan</div>
+        <br><br>
+
+        <table width="200">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td colspan="2" bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+                <td bgcolor="#dddddd">&nbsp;</td>
+            </tr>
+        </table>    
+        <div>Tabla similar a las anteriores, pero en este caso, se utiliza el atributo colspan para que una celda ocupe 2 columnas </div>
+
+        <h2>3-g)</h2>
+        <table width="200" border="1">
+            <tr>
+                <td colspan="3"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td colspan="2" rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="50%">&nbsp;</td>
+            </tr>
+        </table>
+        <div>Se crea una tabla, con ancho (width) de 200px y bordes (border) de 1px, en la que se agrega el título haciendo uso del colspan y del div centrado. Luego para la primera celda de la segunda fila, se utilizan conjuntamente los atributos colspan y rowspan, haciendo que dicha celda ocupe 2 columnas y 2 filas. Finalmente, se agrega una celda en la segunda fila y tercer fila (aquí definiendo que debe ocupar el 50% del espacio disponible), completando la estructura de la tabla</div>
+        <br><br>
+
+        <table width="200" border="1" cellpadding="0" cellspacing="0">
+            <tr>
+                <td colspan="2"><div align="center">Título</div></td>
+            </tr>
+            <tr>
+                <td rowspan="2">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td width="50%">&nbsp;</td>
+            </tr>
+        </table>
+        <div>Similar a la anterior, pero se agregan los atributos cellpadding y cellspacing en 0, eliminando respectivamente el espacio interno de las celdas y el espacio entre ellas. Además, la primera celda de las filas de datos utiliza rowspan para ocupar 2 filas</div>
+
+        <h2>3-h)</h2>
+        <form id="form1" name="form1" action="procesar.php" method="post" target="_blank">
+            <fieldset>
+                <legend>LOGIN</legend>
+                Usuario: <input type="text" id="usu1" name="usu1" value="xxx" /><br />
+                Clave: <input type="password" id="clave1" name="clave1" value="xxx" />
+            </fieldset>
+            <input type="submit" id="boton1" name="boton1" value="Enviar" />
+        </form>
+        <div>Se define un formulario de inicio de sesión utilizando form, con los atributos action, method y target. Se agrupan los campos de usuario y clave mediante fieldset y se utiliza legend para colocar el título "LOGIN". Los campos se crean con input, utilizando los tipos text y password, y finalmente se agrega un botón de envío mediante input type="submit"</div>
+        <br><br>
+
+        <form id="form2" name="form2" action="" method="get" target="_blank">
+            LOGIN<br />
+            <label>Usuario: <input type="text" id="usu2" name="usu2" /></label><br />
+            <label>Clave: <input type="text" id="clave2" name="clave2" /></label><br />
+            <input type="submit" id="boton2" name="boton2" value="Enviar" />
+        </form>
+        <div>Similar al anterior, pero se utiliza label para asociar los textos "Usuario" y "Clave" con sus respectivos campos de entrada. El formulario utiliza el método get y no tiene definida una direccion de destino en action. Además el campo Clave tiene el tipo text, por lo que el contenido ingresado se muestra sin ocultarse y no se utiliza fieldset ni legend para agrupar y titular los campos </div>
+        <br><br>
+
+        <form id="form3" name="form3" action="mailto:xx@xx.com” enctype=text/plain method="post" target="_blank">
+            <fieldset>
+                <legend>LOGIN</legend>
+                Usuario: <input type="text" id="usu3" name="usu3" /><br />
+                Clave: <input type="password" id="clave3" name="clave3" />
+            </fieldset>
+            <input type="reset" id="boton3" name="boton3" value="Enviar" />
+        </form>
+        <div>Similar al primer formulario, pero utiliza mailto en action para enviar los datos a una dirección de correo electrónico y enctype="text/plain" para especificar el formato de los datos enviados. Además, se utiliza input type="reset", que permite restablecer los campos del formulario a sus valores iniciales en lugar de enviarlos.</div>
+
+        <h2>3-i)</h2>
+        <label>
+            Botón 1
+            <button type="button" name="boton1" id="boton1">
+                <img src="logo.jpg" alt="Botón con imagen " width="30" height="20" /><br />
+                <b>CLICK AQUÍ</b>   
+            </button>
+        </label>
+        <div>Se crea un botón mediante button, que contiene una imagen y un texto en negrita. Se utiliza type="button", por lo que es un botón común que no envía el formulario. La imagen se agrega mediante img y se especifican su ubicación, texto alternativo, ancho y alto.</div>
+        <br><br>
+
+        <label>Botón 2
+            <input type="button" name="boton2" id="boton2" value="CLICK AQUÍ" />
+        </label>
+        <div>En este caso, solo se crea un botón y su texto se indica con el atributo value</div>
+
+        <h2>3-j)</h2>
+        <p><label><input type="radio" name="opcion" id="X" value="X" />X</label><br />
+        <label><input type="radio" name="opcion" id="Y" value="Y" />Y</label></p>
+        <div>Se crean dos botones de opción (radio buttons) llamados X e Y. Como Como ambos tienen el mismo atributo name="opcion", pertenecen al mismo grupo, por lo que solo se puede seleccionar uno de ellos a la vez.</div>
+        <br><br>
+
+        <p><label><input type="radio" name="opcion1" id="X" value="X" />X</label><br />
+        <label><input type="radio" name="opcion2" id="Y" value="Y" />Y</label></p>
+        <div>Similar al anterior, pero como tienen distintos valores en el atributo name, pertenecen a grupos diferentes y es posible seleccionar ambos simultáneamente</div>
+
+        <h2>3-k)</h2>
+        <select name="lista">
+            <optgroup label="Caso 1">
+                <option>Mayo</option>
+                <option>Junio</option>
+            </optgroup>
+                <optgroup label="Caso 2">
+                <option>Mayo</option>
+                <option>Junio</option>
+            </optgroup>
+        </select>
+        <div>Se crea una lista desplegable con dos grupos de opciones: "Caso 1" y "Caso 2", definidas con optgroup y el atributo label (mostrando el nombre). Cada grupo contiene las opciones de Mayo y Junio</div>
+        <br><br>
+
+        <select name="lista[]" multiple="multiple">
+            <optgroup label=" Caso 1">
+                <option>Mayo</option>
+                <option>Junio</option>
+            </optgroup>
+                <optgroup label=" Caso 2">
+                <option>Mayo</option>
+                <option>Junio</option>
+            </optgroup>
+        </select>
+        <div>En este caso, se crea una lista desplegable que permite seleccionar varias opciones al mismo tiempo. El atributo multiple permite realizar múltiples selecciones y los corchetes en el atributo name indican que se pueden enviar varios valores.</div>
+    </body>
+</html>
