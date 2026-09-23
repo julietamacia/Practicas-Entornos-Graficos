@@ -1,0 +1,32 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body> 
+    <p class="contenido" style="font-weight: normal;"> 
+        Este es un texto ...............
+    </p> 
+    <!--
+        Se aplica la regla de etiqueta p (fuente arial/helvetica, 10px, texto negro).   
+        La clase .contenido sobrescribe el tamaño a 14px y define la fuente en negrita (font-weight: bold).   
+        El estilo en línea style="font-weight: normal;" gana por especificidad y anula la negrita de la clase.   
+        Efecto final: texto arial/helvetica, 14px, color negro y peso normal (sin negrita).   
+    -->
+    <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+            <!--
+                No tiene regla específica, el selector universal * le aplica color verde. Mantiene el tamaño y grosor predeterminado del navegador.
+            -->
+        </tr>
+        <tr>
+            <td>
+                <a href="http://www.google.com.ar">con un enlace</a>
+                <!-- 
+                    Las pseudoclases (:link, :visited, :hover, :active) ganan en especificidad al selector universal *. Cambia de color según el estado: gris (no visitado), azul (visitado), fucsia (al pasar el mouse) y rojo (al presionar).
+                -->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

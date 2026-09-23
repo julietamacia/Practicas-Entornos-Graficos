@@ -1,0 +1,47 @@
+Ejercicio 3: analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto.
+
+p.quitar {
+color: red;
+}
+
+Selector: p.quitar, selecciona únicamente los párrafos (<p>) que poseen el atributo class="quitar". En este caso, el segundo y último párrafo
+Efectos: 
+    - color: red; -> define que el texto del párrafo seleccionado será de color rojo.
+
+
+*.desarrollo {
+font-size: 8px;
+}
+
+Selector: *.desarrollo, selecciona a todas las etiquetas que posean el atributo class="desarrollo". En este caso solo al primer párrafo
+Efectos: 
+    - font-size: 8px; -> define un tamaño de fuente de 8 pixeles
+
+
+.importante {
+font-size: 20px;
+}
+
+Selector: .importante, selecciona todas las etiquetas que poseen el atributo class="importante". En este caso, al cuarto párrafo y al último 
+Efectos: 
+    - font-size: 20px; -> define un tamaño de fuente de 20 pixeles
+
+
+<p class="desarrollo">
+    En este primer párrafo trataremos lo siguiente:
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="quitar">
+    Este párrafo debe ser quitado de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p >
+    En este otro párrafo trataremos otro tema:<br />
+    xxxxxxxxxxxxxxxxxxxxxxxxx
+</p>
+<p class="importante">
+    Y este es el párrafo más importante de la obra…
+    <br />xxxxxxxxxxxxxxxxxxxxxxxxx
+</ p>
+<h1 class="quitar">Este encabezado también debe ser quitado de la obra</h1>
+<p class="quitar importante">Se pueden aplicar varias clases a la vez</p>

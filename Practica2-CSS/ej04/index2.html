@@ -1,0 +1,33 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="contenido">
+<!--
+    Aplica a todo el documento un tamaño de fuente de 14px y negrita (font-weight: bold, font-size: 14px;).
+-->
+    <p> Este es un texto................</p>
+    <!--
+        La regla de etiqueta p fija explícitamente el tamaño a 10px, sobrescribiendo los 14px heredados del body.   
+        Como la regla p no especifica un font-weight, el párrafo hereda la negrita (bold) asignada al body.   
+        Efecto final: Texto en Arial/Helvetica, 10px, color negro y en negrita. 
+    -->
+    <table>
+        <tr>
+            <td>Y esta es una tabla.......</td>
+            <!--
+                Recibe el color verde por el selector universal *. 
+                Hereda del body el tamaño de 14px y la negrita.  
+            -->
+        </tr>
+        <tr>
+            <td>
+                <a href="http://www.google.com.ar">con un enlace</a>
+                <!--
+                    Mantiene la misma lógica de colores según el estado que en el Caso 1, pero hereda el tamaño de 14px y la negrita aplicados al body.
+                -->
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
