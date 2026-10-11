@@ -1,0 +1,177 @@
+<html>
+<head>
+    <title>Bootstrap - Componentes</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <style>
+        .violeta {
+        background-color: #a47fa5;
+        }
+
+        .rosa {
+            background-color: #f3d9d0;
+        }
+
+        .verde {
+            background-color: #65cc86;
+        }
+
+        .gris {
+            background-color: #a0929c;
+        }
+
+        .celeste {
+            background-color: #7fa0ca;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-3">
+
+        <div class="row">
+            <div class="col-12 mb-3">
+                <div class="p-3 violeta">Encabezado</div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-12 col-md-3 mb-3">
+                <div class="h-100 p-3 rosa">
+                    <p>Sidebar</p>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#miModal">Abrir modal</button>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-9">
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <div class="bg-success p-3">
+                            <div class="alert alert-success mb-0" role="alert">
+                                ¡Éxito!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/400/250" class="card-img-top" alt="imagen">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">Texto descriptivo</p>
+                                <a href="#" class="btn btn-primary">Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/400/250" class="card-img-top" alt="imagen">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">Texto descriptivo</p>
+                                <a href="#" class="btn btn-primary">Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/400/250" class="card-img-top" alt="imagen">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">Texto descriptivo</p>
+                                <a href="#" class="btn btn-primary">Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://picsum.photos/400/250" class="card-img-top" alt="imagen">
+                            <div class="card-body">
+                                <h5 class="card-title">Título</h5>
+                                <p class="card-text">Texto descriptivo</p>
+                                <a href="#" class="btn btn-primary">Link</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="gris h-100 p-3">Contenido</div>
+                    </div>
+
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="gris h-100 p-3">Contenido</div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-6 col-md-4 mb-3">
+                        <div class="celeste h-100 p-3">Contenido</div>
+                    </div>
+
+                    <div class="col-6 col-md-8 mb-3">
+                        <div id="miSlider" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#miSlider" data-slide-to="0" class="active"></li>
+                                <li data-target="#miSlider" data-slide-to="1"></li>
+                                <li data-target="#miSlider" data-slide-to="2"></li>
+                            </ol>
+
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                <img src="https://picsum.photos/800/400?random=5" class="d-block w-100" alt="imagen 1">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://picsum.photos/800/400?random=6" class="d-block w-100" alt="imagen 2">
+                                </div>
+                                <div class="carousel-item">
+                                <img src="https://picsum.photos/800/400?random=7" class="d-block w-100" alt="imagen 3">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-target="#miSlider" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-target="#miSlider" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Siguiente</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="miModalLabel">Título del modal</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Contenido del modal
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar cambios</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</div>
+</body>
+</html>
