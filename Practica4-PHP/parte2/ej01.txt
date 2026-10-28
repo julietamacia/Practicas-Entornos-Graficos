@@ -1,0 +1,20 @@
+Ejercicio 1: 
+Indicar si los siguientes códigos son equivalentes.
+<?php
+$a = array( 'color' => 'rojo',
+ 'sabor' => 'dulce',
+ 'forma' => 'redonda',
+ 'nombre' => 'manzana',
+ 4
+ );
+?> 
+
+<?php
+$a['color'] = 'rojo';
+$a['sabor'] = 'dulce';
+$a['forma'] = 'redonda';
+$a['nombre'] = 'manzana';
+$a[] = 4;
+?> 
+
+sí, ambos son equivalentes. Crean un array asociativo con las claves color, sabor , forma y nombre; valores rojo, dulce, redonda y manzana, añadiendo un elemento númerico al final (4)

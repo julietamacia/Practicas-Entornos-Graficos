@@ -1,0 +1,28 @@
+Ejercicio 2: 
+En cada caso, indicar las salidas correspondientes:
+
+a) 
+<?php
+$matriz = array("x" => "bar", 12 => true);
+echo $matriz["x"];      -> imprime: bar 
+echo $matriz[12];       -> imprime: 1 (booleano true que se convierte en 1 al imprimirse)
+?>
+
+
+b) 
+<?php
+$matriz = array("unamatriz" => array(6 => 5, 13 => 9, "a" => 42));
+echo $matriz["unamatriz"][6];       -> imprime: 5
+echo $matriz["unamatriz"][13];      -> imprime: 9
+echo $matriz["unamatriz"]["a"];     -> imprime: 42
+?>
+
+
+c)
+<?php
+$matriz = array(5 => 1, 12 => 2);
+$matriz[] = 56;
+$matriz["x"] = 42; unset($matriz[5]); unset($matriz);
+?> 
+
+Modifica el array agregando valores y claves (56, "x" => 42), borra el índice 5 con unset y finalmente destruye toda la variable $matriz. No genera salida por pantalla
