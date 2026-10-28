@@ -1,0 +1,5 @@
+a) Son equivalentes, todos los bloques imprimen los números del 1 al 10, utilizando distintas estructuras repetitivas o sintaxis distintas 
+
+b) Son equivalentes, todos recorren un bucle for, imprimiendo los números 1 al 10 
+
+c) Si son equivalentes, el bloque condicional if / elseif y la estructura de selección switch realizan exactamente la misma evaluación de la variable $i y muestran el mismo mensaje según corresponda

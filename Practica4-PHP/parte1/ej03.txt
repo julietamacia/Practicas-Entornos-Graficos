@@ -1,0 +1,48 @@
+a) 
+<html>
+<head><title>Documento 1</title></head>
+<body>
+<?php
+ echo "<table width = 90% border = '1' >";
+ $row = 5;
+ $col = 2;
+ for ($r = 1; $r <= $row; $r++) {
+ echo "<tr>";
+ for ($c = 1; $c <= $col;$c++) {
+ echo "<td>&nbsp;</td>\n";
+ } echo "</tr>\n";
+ }
+ echo "</table>\n";
+?>
+</body></html>
+
+Genera dinámicamente una tabla HTML con un ancho de 90%, borde de 1, compuesta por 5 filas ($row = 5) y dos columnas ($col = 2), rellenando cada celda con un espacio en blanco (&nbsp;)
+
+b) 
+<html>
+<head><title>Documento 2</title></head>
+<body>
+<?php
+if (!isset($_POST['submit'])) {
+?>
+ <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+ Edad: <input name="age" size="2">
+ <input type="submit" name="submit" value="Ir">
+ </form>
+<?php
+ }
+else {
+ $age = $_POST['age'];
+ if ($age >= 21) {
+ echo 'Mayor de edad';
+ }
+ else {
+ echo 'Menor de edad';
+ }
+}
+?>
+</body></html>
+
+Es un script PHP autocontenido: 
+- Si el formulario no ha sido enviado (!isset($_POST['submit'])), muestra un formulario HTML pidiendo la edad
+- Al enviarlo captura la edad ingresada, evalúa si es mayor o menor de 21 años y muestra el mensaje correspondiente

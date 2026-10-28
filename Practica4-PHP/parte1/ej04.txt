@@ -1,0 +1,17 @@
+datos.php
+<?php
+$color = 'blanco';
+$flor = 'clavel';
+?>
+
+<?php
+echo "El $flor $color \n";
+include 'datos.php';
+echo " El $flor $color";
+?>
+
+Produce las salidas: 
+El
+ El clavel blanco
+
+En el primer echo las variables no están definidas por lo que no muestran ningun valor, luego cuando se incluye datos.php, el segundo echo ya tiene las variables definidas y las muestra 

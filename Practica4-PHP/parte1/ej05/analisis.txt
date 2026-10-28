@@ -1,0 +1,1 @@
+Funcionamiento: es un contador de visitas básico basado en archivos de texto. Lee el número actual desde contador.dat, le suma 1, sobreescribe el archivo con el nuevo valor y lo muestra formateando por pantalla en la página visitas.php
